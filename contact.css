@@ -1,0 +1,192 @@
+		#container
+		{
+			font-family: "Verdana", "Geneva", sans-serif;
+			font-size:  12px;
+			color: grey;
+			width: 900px;
+		}
+		#content
+		{
+			background-color: grey;
+			padding: 10px;
+			height: 700px;
+		}
+		#colOne
+		{
+			
+			width: 30%;
+			float: left;
+			background-color: grey;
+			color: white;
+		}
+		#colTwo
+		{
+			
+			width: 67%;
+			float: left;
+			background-color: grey;
+		}
+		header
+		{
+			background-color:  #036;
+			height:  240px;
+			color: white;
+		}
+		#special
+		{
+			background-color: lightblue;
+		}
+		
+		#special2
+		{
+			background-color: lightblue;
+		}
+		nav
+		{
+			background-color:  #565656;
+			height: 20px;
+			color: #000000;
+		}
+		ul 
+		{
+			
+			
+		}
+		ul li.navbar 
+		{
+			display: inline;
+			padding-right: 20px;
+			color: white;
+		}
+		ul li
+		{
+			
+			padding-right: 20px;
+			color: white;
+		}
+		nav a:link
+		{
+			text-decoration: none;
+		}
+		nav a:visited
+		{
+			text-decoration: none;
+		}
+		.links a:hover
+		{
+			box-shadow: 0 0 25px 5px white;
+		}
+		nav a:hover
+		{
+			box-shadow: 0 0 25px 5px white;
+		}
+		nav a:active
+		{
+			text-decoration: none;
+		}
+		h1
+		{
+			font-size:  18px;
+			color: darkblue;
+		}
+		h2
+		{
+			font-size: 16px;
+			color: darkblue;
+		}
+		h3
+		{
+			font-size: 14px;
+			color: darkblue;
+		}
+		body 
+		{
+  			background-image: url('images/site-bg.jpg');
+  			background-repeat: repeat-x;
+  			background-color: #5eb3f6;
+		}
+		footer
+		{
+			background-color: darkblue;
+			height: 50px;
+			color: white;
+			padding: 15px;
+		}
+		footer ul
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+		footer ul li
+		{
+			padding-right: 15px;
+		}
+		footer ul li a:link
+		{
+			color: lightblue;
+			text-decoration: none;
+		}
+		footer ul li a:visited
+		{
+			color: lightblue;
+			text-decoration: none;
+		}
+		footer ul li a:hover
+		{
+			color: white;
+			background-color: lightblue;
+			text-decoration: none;
+		}
+		footer ul li a:active
+		{
+			color: lightblue;
+			text-decoration: none;
+		}
+
+
+
+form
+{
+	background-color: #eee;
+
+}
+input[type=text], input[type=email], input[type=tel], textarea
+{
+	width: 60%;
+
+}
+label
+{
+	display: inline-block;
+	width: 30%;
+}
+
+label.radbuttons
+{
+	max-width: 10%;
+}
+
+input[type=text], input[type=email], input[type=tel], select, textarea
+{
+	padding: 5px;
+	margin: 5px;
+}
+
+input[type=radio]
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+
+
+input[type=submit]
+{
+	padding: 5px;
+	margin: 10px;
+	background-color: #5eb3f6;
+	border-radius: 4px;
+}

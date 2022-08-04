@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset='utf-8'>
+	<title> Patton's Portfolio </title>
+	<link rel="stylesheet" type="text/css" href="link.css">
+	<style>
+	ul {
+    	list-style-position: inside;
+	}
+	</style>
+
+</head>
+
+
+
+<div id="container">
+	<header>
+		<a href="index.html"><img src="images/binary.png" alt="Lakes aquarium logo"  height=240 width=900/></a>
+	</header>
+	<nav>
+		<ul>
+			<li class="navbar"><a href="#"> Portfolio </a> </li>
+			<li class="navbar"><a href="paft.html"> PAFT </a> </li>
+			<li class="navbar"><a href="pattos.html"> PattOS </a> </li>
+			<li class="navbar"><a href="adwars.html"> Ad Wars </a> </li>
+			<li class="navbar"><a href="contact.html"> Contact </a> </li>
+		</ul>
+	</nav>
+
+
+
+	<div id="content">
+		<div style="text-align:center; margin: 0 auto;border-style: dotted;">
+			<h1 style="text-transform: capitalize">PAFT</h2>
+			<h2> Peer to Peer Anonymous File Transfer </h3>
+			<ul class="links">
+				<li class="navbar"><a href="paft.html" class="button">Overview</a></li>
+				<li class="navbar"><a target="_blank" href="https://github.com/PattoOehler/PAFT" class="button">Code</a></li>
+			</ul>
+			<img src="images/paftmain.png" alt="" height="35%" width="75%"/>
+			<p>
+				<ul>
+					<li> Finds peers and uses them as proxies for anonymity using <a href="https://en.wikipedia.org/wiki/Onion_routing">onion routing</a> </li>
+					<li> Seperates the files into chunks to allow for partial/concurrent downloading </li>
+					<li> Uses SHA-256 checksums to validate the integrity of chunks</li>
+					<li> 2^160 different possible files/peers </li>
+					<li> Logaritmic searches of peers by using a Distributed Hash Table </li>
+
+				</ul>
+			</p>
+		</div>
+
+
+		<aside id="colOne">
+					
+			<div style="text-align:center; margin: 0 auto;">				
+				<h2>PattOS</h2>
+			
+				<ul class="links">
+					<li class="navbar"><a href="pattos.html" class="button">Overview</a></li>
+					<li class="navbar"><a target="_blank" href="https://github.com/PattoOehler/PattOS" class="button">Code</a></li>
+				</ul>
+				<p> This is my own operating system made completely from scratch in C++(and some assembly) </p>
+				<img class="image fit" src="images/PattOS2.png" alt="" height="35%" width="75%"/></a>
+				<p>
+				<ul>
+					<li> Created my own file system</li>
+					<li> Implemented device drivers for the keyboard, mouse, hard drive, and monitor</li>
+					<li> Used a Makefile to quickly compile and run the code </li>
+					<li> Made my own command line to be able to communicate with the code at runtime</li>
+				</ul>
+				</p>
+			</div>
+		</aside>
+
+
+		<section id="colTwo">
+			
+			<div style="text-align:center; margin: 0 auto;">
+				<h2> AD Wars </h2>
+
+				<ul class="links">
+					<li class="navbar"><a href="adwars.html" class="button">Overview</a></li>
+					<li class="navbar"><a target="_blank" href="https://github.com/PattoOehler/CyberTheoryProject" class="button">Code</a></li>
+				</ul>
+				<p> This is a top-down shooter made in godot as a group project over the course of 3 days </p>
+				<img class="image fit" src="images/godotmain.png" alt="" height="35%" width="75%"/>
+				<p>
+				<ul>
+					<li> Made using Godot's programming language GDScript </li>
+					<li> Has three different levels </li>
+					<li> Includes 2 bosses and 3 enemies </li>
+					<li> Won Students Choice Award at Indian Hill's Byte Jam </li>
+				</ul>
+				</p>
+			</div>
+		</section>
+	</div><!--content-->
+
+	<footer>
+		
+		<ul>
+			<div id="footerNav">
+			<li class="navbar"><a href="#"> Portfolio </a> </li>
+			<li class="navbar"><a href="paft.html"> PAFT </a> </li>
+			<li class="navbar"><a href="pattos.html"> PattOS </a> </li>
+			<li class="navbar"><a href="adwars.html"> Ad Wars </a> </li>
+			<li class="navbar"><a href="contact.html"> Contact </a> </li>
+		</div>
+		</ul>
+	    </div>
+
+		
+		
+	</footer>
+</div> <!--container-->
+</html>

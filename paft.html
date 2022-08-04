@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset='utf-8'>
+	<title> PAFT </title>
+	<link rel="stylesheet" type="text/css" href="paft.css">
+
+</head>
+
+
+
+<div id="container">
+	<header>
+		<a href="index.html"><img src="images/binary.png" alt="Lakes aquarium logo"  height=240 width=900/></a>
+	</header>
+	<nav>
+		<ul>
+			<li class="navbar"><a href="index.html"> Portfolio </a> </li>
+			<li class="navbar"><a href="#"> PAFT </a> </li>
+			<li class="navbar"><a href="pattos.html"> PattOS </a> </li>
+			<li class="navbar"><a href="adwars.html"> Ad Wars </a> </li>
+			<li class="navbar"><a href="contact.html"> Contact </a> </li>
+		</ul>
+	</nav>
+
+
+
+	<div id="content">
+		<div style="text-align:center; margin: 0 auto;border-style: dotted;">
+			<h1 style="text-transform: capitalize">PAFT</h2>
+			<h2> Peer to Peer Anonymous File Transfer </h3>
+			<ul class="links">
+				<li class="navbar"><a href="paft.html" class="button">Overview</a></li>
+				<li class="navbar"><a target="_blank" href="https://github.com/PattoOehler/PAFT" class="button">Code</a></li>
+			</ul>
+			<video width="70%" height="40%" controls>
+					<source src="videos/paft.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+			<h2> DHT - Distribted Hash Table </h2>
+			<p>
+				This program uses a DHT to be able to find peers and files in log(n) time with high probability. 
+				<a href="https://pub.tik.ee.ethz.ch/students/2006-So/SA-2006-19.pdf">This</a> paper was used as a reference while building the DHT from scrach. A noteable difference is that PAFT uses TCP while the paper describes using UDP, this creates less communication problems that need to be solved at the expence of speed.
+			</p>
+			<h1> Lifecycle of a file </h1>
+			<h3> Connecting to the Network </h3>
+			<p> First to do anything you have to have someone to connect to, you can find peers by having them already stored in the DHT
+					or by pinging someone who is already in the network. 
+			</p>
+
+			<h3> Uploading a file </h3>
+			<p> To upload a file you first have to make a metadata file. This seperates the file into chunks and contains
+				information such as how many chunks are in the file, the checksum of those chunks, the file ID and filename. After being created a string is given that contains the checksum and the ID of the file for others to find the file and download it.
+				Once the metadata file is made then you find the closest 3 peers in the network to that file ID and ask them to store 
+				the File ID and your IP/Port. 
+			</p>
+
+			<h3> Downloading a file </h3>
+			<p> To download a file all you need is the ID of the file and the checksum of the metadata file. First find the closest peers in the network to the file ID asking them if they know who has the metadata file. Download the metadata file from who was found, comparing the checksum.  Continue to download all of the chunks and validate each one. Once you have the file, upload the file to the network so that others can download the file from you as well. 
+			</p>
+
+			<h3> Downloading a file using Onion Routing(Beta) </h3>
+			<p> 
+				The only difference between using onion routing and a normal download is that you run your request through multiple peers so that the uploader does not know who is downloading the file.  Those peers forward the requst to the next peer and gives the responce back.  This gives the downloader anonimity but requires 3x the data to be transfered.
+			</p>
+
+		</div>
+
+
+		
+	</div><!--content-->
+
+	<footer>
+		
+		<ul>
+			<div id="footerNav">
+			<li class="navbar"><a href="index.html"> Portfolio </a> </li>
+			<li class="navbar"><a href="#"> PAFT </a> </li>
+			<li class="navbar"><a href="pattos.html"> PattOS </a> </li>
+			<li class="navbar"><a href="adwars.html"> Ad Wars </a> </li>
+			<li class="navbar"><a href="contact.html"> Contact </a> </li>
+		</div>
+		</ul>
+	    </div>
+
+		
+		
+	</footer>
+</div> <!--container-->
+</html>
